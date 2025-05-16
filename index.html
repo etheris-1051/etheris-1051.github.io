@@ -1,114 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | Etheris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etheris | High Jung Institute of Technology</title>
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: 'Courier New', Courier, arial;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      overflow-x: hidden;
-      color: #00ff00;
-      scroll-behavior: smooth;
+      box-sizing: border-box;
     }
-
-    nav {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 10;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 0.5em 1em;
-      border-radius: 10px;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0c10;
+      color: #c5c6c7;
     }
-
-    nav a {
-      color: #00ff00;
-      text-decoration: none;
-      margin: 0 10px;
+    header {
+      background: linear-gradient(to right, #0b0c10, #1f2833);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #45a29e;
+    }
+    .logo {
+      font-size: 1.8rem;
       font-weight: bold;
+      color: #66fcf1;
     }
-
-    .overlay {
-      backdrop-filter: blur(6px);
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 15px;
-      border: 1px solid rgba(0, 255, 0, 0.2);
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #c5c6c7;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #66fcf1;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: radial-gradient(circle at top center, #1f2833 0%, #0b0c10 100%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #66fcf1;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #c5c6c7;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      background-color: #45a29e;
+      color: #0b0c10;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #66fcf1;
+    }
+    footer {
+      text-align: center;
       padding: 2rem;
-      width: 90%;
-      max-width: 80vw;
-      margin: 100px auto;
-      animation: fadeIn 2s ease-out;
-      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
-    }
-
-    h1, p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      animation: fadeInText 2.5s ease-out;
-      background: linear-gradient(
-        120deg,
-        #00ff00 0%,
-        #00cc66 25%,
-        #00aa44 50%,
-        #00cc66 75%,
-        #00ff00 100%
-      );
-      background-size: 400% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: shimmer 10s linear infinite;
-    }
-
-    h1 {
-      font-size: 2.5em;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInText {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes shimmer {
-      0% { background-position: 0% 50%; }
-      100% { background-position: 400% 50%; }
-    }
-
-    a {
-      text-decoration:none;
+      background-color: #1f2833;
+      color: #c5c6c7;
+      border-top: 1px solid #45a29e;
     }
   </style>
 </head>
 <body>
 
-  <div class="overlay" id="section1">
-    <h1>Etheris</h1>
-    <p>
-      CHeese
-    </p>
-  </div>
+  <header>
+    <div class="logo">Etheris</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Research</a>
+      <a href="#">Team</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <div class="overlay" id="section2">
-    <a href="projects.html"><h1>Projects</h1></a>
-    
-  </div>
+  <section class="hero">
+    <h1>Welcome to Etheris</h1>
+    <p>At the forefront of innovation and exploration in science and technology at the High Jung Institute of Technology.</p>
+    <a href="#" class="cta-button">Learn More</a>
+  </section>
 
-  <div class="overlay" id="section3">
-    <h1>Contact</h1>
-    <p>
-      High Jung Institute of Technology
-    </p>
-  </div>
+  <footer>
+    &copy; 2025 Etheris | High Jung Institute of Technology. All rights reserved.
+  </footer>
+
 </body>
 </html>
