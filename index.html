@@ -1,1 +1,114 @@
-404
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Etheris</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Courier New', Courier, arial;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      color: #00ff00;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 0.5em 1em;
+      border-radius: 10px;
+    }
+
+    nav a {
+      color: #00ff00;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .overlay {
+      backdrop-filter: blur(6px);
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      border: 1px solid rgba(0, 255, 0, 0.2);
+      padding: 2rem;
+      width: 90%;
+      max-width: 80vw;
+      margin: 100px auto;
+      animation: fadeIn 2s ease-out;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    }
+
+    h1, p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      animation: fadeInText 2.5s ease-out;
+      background: linear-gradient(
+        120deg,
+        #00ff00 0%,
+        #00cc66 25%,
+        #00aa44 50%,
+        #00cc66 75%,
+        #00ff00 100%
+      );
+      background-size: 400% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 10s linear infinite;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 400% 50%; }
+    }
+
+    a {
+      text-decoration:none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay" id="section1">
+    <h1>Etheris</h1>
+    <p>
+      CHeese
+    </p>
+  </div>
+
+  <div class="overlay" id="section2">
+    <a href="projects.html"><h1>Projects</h1></a>
+    
+  </div>
+
+  <div class="overlay" id="section3">
+    <h1>Contact</h1>
+    <p>
+      High Jung Institute of Technology
+    </p>
+  </div>
+</body>
+</html>
